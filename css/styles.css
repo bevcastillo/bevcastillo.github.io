@@ -3,8 +3,16 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Karla', sans-serif;
+}
 
+.logo {
+    font-family: 'Pacifico', cursive;
+    color: #648D93;
+}
+
+.logo:hover {
+    color: #4f6d75;
+    font-family: 'Pacifico', cursive;
 }
 
 
@@ -15,16 +23,15 @@ nav {
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    transition: top 0.3s;
+    display: block;
 }
 
 nav img {
     width: 60px; 
     height: 60px;
     margin: 10px;
-}
-
-nav img:hover {
-    cursor: pointer;
 }
 
 nav ul {
@@ -39,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #303030;
+    color: #648D93;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -51,7 +58,7 @@ a.active, a:hover {
     background: none;
     text-decoration: underline;
     transition: .5s;
-    color: black;
+    color: #4f6d75;
 }
 
 .checkbtn {
@@ -87,6 +94,8 @@ a.active, a:hover {
     margin: auto;
     align-items:center;
     justify-content:center;
+    font-family: 'Karla', sans-serif;
+
 }
 
 .mainVisualSubHeading__text {
@@ -94,9 +103,297 @@ a.active, a:hover {
     text-align: center;
     margin-top: 22px;
     font-size: 32px;
+    font-family: 'Karla', sans-serif;
 }
 
 
+.aboutSection {
+    display: grid;
+    padding: 100px 100px;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.section__heading {
+    font-size: 22px;
+    color: #648D93;
+    margin: auto;
+    padding: auto;
+}
+
+.aboutSection__image {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding: 50px 0px 0px 0px;
+    margin: auto;
+}
+
+.aboutSection__content {
+    text-align: center;
+    padding: 50px 50px 0px 50px;    
+    margin: auto;
+    font-style: normal;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.section__header {
+    display: grid;
+    padding: 40px 100px;
+    grid-template-columns: auto auto;
+    margin: auto;
+    padding: auto;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Karla', sans-serif;
+}
+
+
+#services {
+    padding: 100px 100px;
+
+}
+
+.grid__image {
+    grid-row: 1 / 2;
+    background-color: white;
+
+}
+
+.grid__text {
+    grid-row: 1 / 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+}
+
+.skillsSection__list {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+.skillsSection__list:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid__image {
+    width: 40%;
+}
+
+.grid__text {
+    height: 200px;
+    width: 60%;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+#my-works {
+    padding: 100px 100px;
+}
+
+.grid__container {
+    transition: 0.3s;
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}
+
+.grid__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid__card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 50px 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+.grid__card h4 {
+    padding-bottom: 20px;
+}
+
+.grid__card p{
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.grid__card a{
+    text-align: left;
+    color: violet;
+    text-decoration: none;
+}
+
+.grid__card a:hover{
+    color: black;
+}
+
+.grid__card span {
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: teal;
+    text-align: left;
+    cursor: pointer;
+}
+
+.empty__grid {
+    width: 40%;
+    padding: 10px;
+    float: left;
+    text-align: left;
+}
+
+.grid__form {
+    width: 60%;
+    padding: 10px;
+    float: left;
+    text-align: left;
+}
+
+#contact {
+    padding: 0px 100px;
+}
+
+.contact-form {
+    background-color: gray;
+    padding: 20px 40px;
+    margin-top: 32px;
+}
+.contact-form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .contact-form input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .contact-form #message_box {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .contact-form button {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #contact-details {
+      text-align: center;
+      padding: 0px 100px;
+  }
+
+  .grid_social__container {
+    transition: 0.3s;
+    width: 20%;
+    padding: 10px;
+    float: left;
+  }
+
+  .grid__social {
+    background-color: yellow;
+    border-style: dashed;
+    padding: 20px 40px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .grid__social p {
+    font-size: 18px;
+  }
+
+  footer {
+      height: auto;
+      background-color: black;
+      padding: 60px 100px;
+      text-align: center;
+  }
+
+
+
+footer ul {
+    float: center;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+a.active, a:hover {
+    background: none;
+    text-decoration: underline;
+    transition: .5s;
+    color: white;
+}
+
+.footer_credits {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* .footer_credits .footer_grid a p{
+    color: white;
+    text-decoration: none;
+} */
+
+
+.footer_grid {
+    transition: 0.3s;
+    width: 50%;
+    float: left;
+  }
+
+  .skillsSection__list .footer_grid p {
+      color: white;
+  }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -139,11 +436,34 @@ a.active, a:hover {
         color: #303030;
     }
 
+    .mainVisualHeading__text {
+        text-align: center;
+    }
+
     .mainVisualSubHeading__text {
         color: #648D93;
         text-align: center;
         margin-top: 22px;
-        font-size: 18px;
+        font-size: 10px;
+    }
+
+    .grid__image {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .grid__text {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grid__container {
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        float: left;
     }
 }
 
@@ -193,6 +513,25 @@ a.active, a:hover {
         text-align: center;
         margin-top: 22px;
         font-size: 18px;
+    }
+
+    .grid__image {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .grid__text {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grid__container {
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        float: left;
     }
 }
 

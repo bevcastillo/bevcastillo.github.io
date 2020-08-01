@@ -2,48 +2,308 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Beverly May Castillo</title>
+        <title>Beverly - Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-
-    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
+
+        <!-- primary colors: #9EBAD2  -->
+
+        <nav id="navbar">
             <input type="checkbox" id='check'>
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
 
-            <a href="index.html">
-               <img src="images/logo-bot.png" alt="">
-            </a>
+                <a href="index.html" class="logo">Beverly</a>
             <ul>
-                <li><a class="active" href="#homeSection">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#my-works">Works</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <section id="homeSection">
+        <section id="home">
             <div class="parallax">
                 <div class="mainVisualSection">
                     <div>
-                        <h1>I'm Beverly May Castillo</h1>
-                        <h3 class="mainVisualSubHeading__text">WordPress Developer X UI/UX Designer</h3>
+                        <h1 class="mainVisualHeading__text">I'm Beverly May Castillo</h1>
+                        <div class="mainVisualSubHeading__text">WordPress Developer | Android Developer | UI/UX Designer</div>
+                        
                     </div>
                 </div>
 
             </div>
         </section> 
+
+        <section id="about">
+            <div class="aboutSection">
+                <div class="section__heading">
+                    <h1>About Me</h1>
+                </div>
+                <div class="aboutSection__image">
+                    <img src="/images/rsz_bev-edited.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
+                </div>
+                <div class="aboutSection__content">
+                    <p>I am a WordPress Developer and a UI/UX Designer at <a href="https://en.hipe.asia/" target="_blank">HiPE Japan Inc.</a></p>
+                    <p>I have a passion for web and mobile development and designing. </a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="section__header">
+                <div class="section__heading">
+                    <h1 style="color: #303030;">What I do?</h1>
+                </div>
+            </div>
+            <div class="skillsSection__list">
+                <div class="grid__image" style="float: left; padding-right: 50px; text-align: right;">
+                    <img src="/images/blog-post-bro.png" style="width: 200px; height: auto;" alt="">
+                </div>
+                <div class="grid__text" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. Nullam sodales tellus id augue mattis, quis condimentum turpis congue. Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>
+                </div>
+            </div>
+
+            <div class="skillsSection__list">
+                <div class="grid__text" style="float: left;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. Nullam sodales tellus id augue mattis, quis condimentum turpis congue. Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>
+                </div>
+                <div class="grid__image" style="float: right; padding-left: 50px; text-align: left;">
+                    <img src="/images/blog-post-bro.png" style="width: 200px; height: auto;" alt="">
+                </div>
+            </div>
+
+            <div class="skillsSection__list">
+                <div class="grid__image" style="float: left; padding-right: 50px; text-align: right;">
+                    <img src="/images/blog-post-bro.png" style="width: 200px; height: auto;" alt="">
+                </div>
+                <div class="grid__text" style="float: right;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. Nullam sodales tellus id augue mattis, quis condimentum turpis congue. Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>
+                </div>
+            </div>
+    
+        </section>
+
+        <section id="my-works">
+            <div class="section__header">
+                <div class="section__heading">
+                    <h1 style="color: #303030;">My Works</h1>
+                </div>
+            </div>
+            <div class="skillsSection__list">
+                <div class="grid__container">
+                    <div class="grid__card">
+                        <h4>DEVCASH APP</h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. 
+                            Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. 
+                            Nullam sodales tellus id augue mattis, quis condimentum turpis congue. 
+                            Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>
+                            <p>
+                                <span>Java</span>
+                                <span>Firebase</span>
+                                <span>Android Studio</span>
+                            </p>
+                            <p><a href="https://github.com/bevcastillo/AndroidStudio-DevcashApp" target="_blank">
+                                View Source Code
+                                <i class="fas fa-external-link-alt" style="padding-left: 10px;"></i></a></p>
+                    </div>
+                </div>
+                <div class="grid__container">
+                     <div class="grid__card">
+                        <h4>MIKKA STORE APP</h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. 
+                            Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. 
+                            Nullam sodales tellus id augue mattis, quis condimentum turpis congue. 
+                            Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p> 
+                            <p>
+                                <span>Java</span>
+                                <span>Firebase</span>
+                                <span>Android Studio</span>
+                            </p>  
+                            <p><a href="https://github.com/bevcastillo/MikkasStoreApp" target="_blank">
+                                View Source Code<i class="fas fa-external-link-alt" style="padding-left: 10px;"></i></a></p>                 
+                    </div>                   
+                </div>
+                <div class="grid__container" >
+                    <div class="grid__card">
+                        <h4>UNIVISIT APP</h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. 
+                            Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. 
+                            Nullam sodales tellus id augue mattis, quis condimentum turpis congue. 
+                            Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>    
+                            <p>
+                                <span>Java</span>
+                                <span>Java</span>
+                                <span>Android Studio</span>
+                            </p>        
+                            <p><a href="https://github.com/bevcastillo/android-UniVisit" target="_blank">
+                                View Source Code<i class="fas fa-external-link-alt" style="padding-left: 10px;"></i></a></p>         
+                    </div>                    
+                </div>
+            </div>
+            <div class="skillsSection__list">
+                <div class="grid__container">
+                    <div class="grid__card">
+                        <h4>BPOC JAPAN SITE</h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. 
+                            Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. 
+                            Nullam sodales tellus id augue mattis, quis condimentum turpis congue. 
+                            Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>          
+                            <p>
+                                <span>CSS</span>
+                                <span>Wordpress</span>
+                                <span>Elementor</span>
+                            </p>      
+                            <p><a href="https://bpoc.co.jp/" target="_blank">View Website<i class="fas fa-external-link-alt" style="padding-left: 10px;"></i></a></p>              
+                    </div>
+                </div>
+                <div class="grid__container">
+                     <div class="grid__card">
+                        <h4>HIPE JAPAN SITE</h4> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit neque sit amet ligula lacinia dignissim. 
+                            Duis eleifend sem lacus, vitae ornare arcu sagittis sed. Nulla convallis sagittis tellus eget ultrices. 
+                            Nullam sodales tellus id augue mattis, quis condimentum turpis congue. 
+                            Aenean consequat tellus id lorem efficitur, ac efficitur mauris eleifend.</p>          
+                            <p>
+                                <span>CSS</span>
+                                <span>Wordpress</span>
+                                <span>Elementor</span>
+                            </p>   
+                            <p><a href="https://en.hipe.asia/" target="_blank">View Website<i class="fas fa-external-link-alt" style="padding-left: 10px;"></i></a></p>                      
+                    </div>                   
+                </div>
+            </div>
+        </section>
+
+       <section id="contact">
+            <div class="skillsSection__list">
+                <div class="empty__grid">
+                </div>
+                <div class="grid__form">
+                    <h2>Like what you see?</h2>
+                    <p>Let's talk</p>
+                    <div class="contact-form">
+                        <form
+                        action="https://formspree.io/mbjzwgzz"
+                        method="POST"
+                      >
+                        <input type="hidden" name="_subject" value="Contact Form Request from bevcastillo.github.io" />
+                        <input id="name" type="text" name="_replyto" placeholder="Fullname">
+                        <input id="email" type="email" name="_replyto" placeholder="Email">
+                        <textarea id="message_box" name="message" placeholder="Write your message"></textarea>                      
+                        <button type="submit">Send</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-details">
+            <div class="section__header">
+                <div class="section__heading">
+                    <h1 style="color: #303030;">Stalk Me</h1>
+                </div>
+            </div>
+            <div class="skillsSection__list">
+                <div class="grid_social__container">
+
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <hp>@bevcastillo.dev</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <p>@bevcastillo_dev</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <p>@bevcastillo</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+
+                </div>
+            </div>
+            <div class="skillsSection__list">
+                <div class="grid_social__container">
+
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <hp>@bevcastillo.dev</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <p>@bevcastillo_dev</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+                    <div class="grid__social">
+                        <p>@bevcastillo</p>
+                    </div>
+                </div>
+                <div class="grid_social__container">
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="skillsSection__list">
+                <div class="footer_credits">
+                    <div class="footer_grid" style="text-align: left;">
+                        <a href="index.html" class="logo">Beverly</a>
+    
+                    </div>
+                    
+                    <div class="footer_grid" style="text-align: right;">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#my-works">Works</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skillsSection__list" style="margin-top: 20px;">
+                            <div class="footer_credits" >
+                <div class="footer_grid" style="text-align: left;">
+                    <!-- <a href="https://stories.freepik.com/web">Illustration by Stories by Freepik</a> -->
+                    <p>Made with ❤️ by Beverly May Castillo.</p>
+                </div>
+                <div class="footer_grid" style="text-align: right;">
+                    <p>Made with ❤️ by Beverly May Castillo.</p>
+                </div>
+            </div>
+            </div>            
+        </footer> 
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+            }
+            </script>
 
     </body>
 </html>

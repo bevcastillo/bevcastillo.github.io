@@ -23,9 +23,10 @@ nav {
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-    font-family: 'Karla', sans-serif;
     transition: top 0.3s;
     display: block;
+    font-family: 'Roboto Slab', serif;
+
 }
 
 nav img {
@@ -54,7 +55,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-a.active, a:hover {
+nav a.active, nav a:hover {
     background: none;
     text-decoration: underline;
     transition: .5s;
@@ -94,7 +95,6 @@ a.active, a:hover {
     margin: auto;
     align-items:center;
     justify-content:center;
-    font-family: 'Karla', sans-serif;
 
 }
 
@@ -103,26 +103,30 @@ a.active, a:hover {
     text-align: center;
     margin-top: 22px;
     font-size: 32px;
-    font-family: 'Karla', sans-serif;
 }
 
 
 .aboutSection {
     display: grid;
-    padding: 100px 100px;
+    padding: 60px 100px;
     margin: auto;
     align-items:center;
     justify-content:center;
-    font-family: 'Karla', sans-serif;
 }
 
 
 .section__heading {
-    font-size: 22px;
-    color: #648D93;
     margin: auto;
     padding: auto;
+    text-align: center;
 }
+
+.section__heading h1{
+    font-size: 26px;
+    color: #303030;
+    font-family: 'Roboto Slab', serif;
+}
+
 
 .aboutSection__image {
     align-items: center;
@@ -134,34 +138,47 @@ a.active, a:hover {
 
 .aboutSection__content {
     text-align: center;
-    padding: 50px 50px 0px 50px;    
+    padding: 50px 100px;    
     margin: auto;
-    font-style: normal;
-    line-height: 2em;
     font-size: 18px;
+}
+
+.aboutSection__content p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #330033;
+    font-weight: lighter;
+}
+
+.aboutSection__content a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.aboutSection__content a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .section__header {
     display: grid;
-    padding: 40px 100px;
     grid-template-columns: auto auto;
     margin: auto;
-    padding: auto;
+    padding: 0px 0px 50px 0px;
     align-items:center;
     justify-content:center;
-    font-family: 'Karla', sans-serif;
 }
 
 
 #services {
-    padding: 100px 100px;
+    padding: 60px 200px;
+    background-color: #F8F8F8;
 
 }
 
 .grid__image {
     grid-row: 1 / 2;
-    background-color: white;
-
 }
 
 .grid__text {
@@ -173,8 +190,17 @@ a.active, a:hover {
     margin: auto;
     align-items:center;
     justify-content:center;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.grid__text p {
     font-size: 18px;
+}
+
+.grid__text span {
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .skillsSection__list {
@@ -201,7 +227,7 @@ a.active, a:hover {
 }
 
 #my-works {
-    padding: 100px 100px;
+    padding: 60px 100px;
 }
 
 .grid__container {
@@ -217,39 +243,52 @@ a.active, a:hover {
 
 .grid__card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
     background-color: white;
-    padding: 50px 40px;
-    margin: 0px;
+    padding: 30px 40px 10px 40px;
+    margin: 10px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
 .grid__card h4 {
     padding-bottom: 20px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: bolder;
+    color: black;
 }
 
 .grid__card p{
     padding-bottom: 20px;
     text-align: left;
+    font-weight: lighter;
+    color: #303030;
 }
 
 .grid__card a{
     text-align: left;
-    color: violet;
+    color: #303030;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
 }
 
 .grid__card a:hover{
     color: black;
+    text-decoration: none;
+    border-bottom: 0.6px solid black;
+
 }
 
 .grid__card span {
-    padding: 2px 10px;
+    padding: 4px 10px;
     border-radius: 20px;
     color: white;
-    background-color: teal;
     text-align: left;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .empty__grid {
@@ -266,14 +305,26 @@ a.active, a:hover {
     text-align: left;
 }
 
+.grid__form h2{
+    font-family: 'Roboto Slab', serif;
+    color: #303030;
+}
+
+.grid__form p{
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+    padding-top: 12px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
 #contact {
-    padding: 0px 100px;
+    padding: 60px 100px;
+    background-color: #F8F8F8;
 }
 
 .contact-form {
-    background-color: gray;
-    padding: 20px 40px;
-    margin-top: 32px;
+    margin-top: 22px;
 }
 .contact-form input[type=text] {
     width: 100%;
@@ -282,6 +333,10 @@ a.active, a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+
   }
 
   .contact-form input[type=email] {
@@ -291,6 +346,9 @@ a.active, a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
   }
 
   .contact-form #message_box {
@@ -301,22 +359,31 @@ a.active, a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
   }
 
   .contact-form button {
-    width: 30%;
-    background-color: #4CAF50;
+    width: 20%;
+    background-color: #648D93;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+
+  .contact-form button:hover{
+    background-color: #4f6d75;
   }
 
   #contact-details {
       text-align: center;
-      padding: 0px 100px;
+      padding: 60px 100px;
   }
 
   .grid_social__container {
@@ -327,20 +394,33 @@ a.active, a:hover {
   }
 
   .grid__social {
-    background-color: yellow;
+    /* background-color: #90CAF9; */
+    background-color: #c0e1fc;
     border-style: dashed;
     padding: 20px 40px;
     margin: 0px;
     text-align: center;
   }
 
-  .grid__social p {
-    font-size: 18px;
+  .grid__social a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .grid__social a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
   }
 
   footer {
       height: auto;
-      background-color: black;
+      background-color: #2d3436;
       padding: 60px 100px;
       text-align: center;
   }
@@ -355,19 +435,18 @@ footer ul {
 footer ul li {
     display: inline-block;
     margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 footer ul li a {
-    color: white;
-    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
     padding: 7px 13px;
-    border-radius: 3px;
     text-transform: none;
     text-decoration: none;
 }
 
 a.active, a:hover {
-    background: none;
     text-decoration: underline;
     transition: .5s;
     color: white;
@@ -377,6 +456,12 @@ a.active, a:hover {
     width: auto;
     height: auto;
     vertical-align: middle;
+}
+
+.footer_credits p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 /* .footer_credits .footer_grid a p{
@@ -392,7 +477,9 @@ a.active, a:hover {
   }
 
   .skillsSection__list .footer_grid p {
-      color: white;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -431,7 +518,7 @@ a.active, a:hover {
         left: 0;
     }
 
-    .mainVisualSection h1{
+    #home .mainVisualSection h2{
         font-size: 32px;
         color: #303030;
     }
@@ -441,10 +528,14 @@ a.active, a:hover {
     }
 
     .mainVisualSubHeading__text {
-        color: #648D93;
+        /* color: #648D93; */
         text-align: center;
         margin-top: 22px;
         font-size: 10px;
+    }
+
+    .mainVisual__text {
+        text-align: center;
     }
 
     .grid__image {
@@ -503,7 +594,7 @@ a.active, a:hover {
         left: 0;
     }
 
-    .mainVisualSection h1{
+    /* .mainVisualSection h1{
         font-size: 32px;
         color: #303030;
     }
@@ -512,8 +603,7 @@ a.active, a:hover {
         color: #648D93;
         text-align: center;
         margin-top: 22px;
-        font-size: 18px;
-    }
+    } */
 
     .grid__image {
         float: left;

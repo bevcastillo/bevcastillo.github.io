@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -82,10 +83,15 @@ nav a.active, nav a:hover {
     background-size: cover;
 }
 
-.mainVisualSection h1{
+.mainVisualHeading__text {
+    text-align: center;
+    font-size: 62px;
+}
+
+/* .mainVisualSection h1{
     font-size: 80px;
     color: #303030;
-}
+} */
 
 .mainVisualSection {
     display: flex;
@@ -174,15 +180,15 @@ nav a.active, nav a:hover {
 #services {
     padding: 60px 200px;
     background-color: #F8F8F8;
-
 }
 
 .grid__image {
     grid-row: 1 / 2;
+    text-align: center;
 }
 
 .grid__text {
-    grid-row: 1 / 2;
+    grid-row: 2 / 2;
     display: flex;
     width: 100%;
     height: 100%;
@@ -191,7 +197,6 @@ nav a.active, nav a:hover {
     align-items:center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .grid__text p {
@@ -525,6 +530,7 @@ a.active, a:hover {
 
     .mainVisualHeading__text {
         text-align: center;
+        font-size: 32px;
     }
 
     .mainVisualSubHeading__text {
@@ -538,16 +544,53 @@ a.active, a:hover {
         text-align: center;
     }
 
+    /* start */
+
+    #reverse__col {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #reverse__col .grid__image{
+        float: left;
+        width: 100%;
+    }
+
+    #reverse__col .grid__text{
+        float: left;
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* end */
+
     .grid__image {
         float: left;
         width: 100%;
-        padding: 10px;
+        padding-top: 30px;
     }
     
     .grid__text {
         float: left;
+        height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .grid__text p {
+        font-size: 16px;
+    }
+    
+    .grid__text span {
+        font-size: 16px;
+        font-weight: bolder;
     }
 
     .grid__container {
@@ -556,6 +599,120 @@ a.active, a:hover {
         padding: 10px;
         float: left;
     }
+
+    .aboutSection {
+        display: grid;
+        padding: 50px 20px;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .aboutSection__content {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .aboutSection__content p{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: #330033;
+        font-weight: lighter;
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+    #services {
+        padding: 50px 20px;
+        background-color: #F8F8F8;
+    }
+
+    #my-works {
+        padding: 50px 20px;
+    }
+
+    #contact {
+        padding: 50px 20px;
+        background-color: #F8F8F8;
+    }
+
+    .contact-form input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form #message_box {
+        width: 100%;
+        height: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form button {
+        width: 100%;
+        background-color: #648D93;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+      }
+
+      .empty__grid {
+        width: 100%;
+        padding: 10px;
+        float: left;
+        text-align: center;
+    }
+    
+    .grid__form {
+        width: 100%;
+        padding: 10px;
+        float: left;
+        text-align: center;
+    }
+
+    #contact-details {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .grid_social__container {
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        float: left;
+      }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -594,27 +751,74 @@ a.active, a:hover {
         left: 0;
     }
 
-    /* .mainVisualSection h1{
+    #home .mainVisualSection h2{
         font-size: 32px;
         color: #303030;
     }
 
+    .mainVisualHeading__text {
+        text-align: center;
+        font-size: 32px;
+    }
+
     .mainVisualSubHeading__text {
-        color: #648D93;
+        /* color: #648D93; */
         text-align: center;
         margin-top: 22px;
-    } */
+        font-size: 10px;
+    }
+
+    .mainVisual__text {
+        text-align: center;
+    }
+
+    /* start */
+
+    #reverse__col {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #reverse__col .grid__image{
+        float: left;
+        width: 100%;
+    }
+
+    #reverse__col .grid__text{
+        float: left;
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* end */
 
     .grid__image {
         float: left;
         width: 100%;
-        padding: 10px;
+        padding-top: 30px;
     }
     
     .grid__text {
         float: left;
+        height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .grid__text p {
+        font-size: 16px;
+    }
+    
+    .grid__text span {
+        font-size: 16px;
+        font-weight: bolder;
     }
 
     .grid__container {
@@ -623,6 +827,119 @@ a.active, a:hover {
         padding: 10px;
         float: left;
     }
+
+    .aboutSection {
+        display: grid;
+        padding: 50px;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .aboutSection__content {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .aboutSection__content p{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: #330033;
+        font-weight: lighter;
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+    #services {
+        padding: 50px;
+        background-color: #F8F8F8;
+    }
+
+    #my-works {
+        padding: 50px;
+    }
+
+    #contact {
+        padding: 50px;
+        background-color: #F8F8F8;
+    }
+
+    .contact-form input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form #message_box {
+        width: 100%;
+        height: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    
+      }
+    
+      .contact-form button {
+        width: 100%;
+        background-color: #648D93;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+      }
+
+      .empty__grid {
+        width: 100%;
+        padding: 10px;
+        float: left;
+        text-align: center;
+    }
+    
+    .grid__form {
+        width: 100%;
+        padding: 10px;
+        float: left;
+        text-align: center;
+    }
+
+    #contact-details {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .grid_social__container {
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        float: left;
+      }
 }
 
 /* Medium devices (tablets, 768px and up) */

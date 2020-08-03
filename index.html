@@ -15,6 +15,8 @@
 
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
         <!-- <nav id="navbar">
             <input type="checkbox" id='check'>
             <label for="check" class="checkbtn">
@@ -36,7 +38,7 @@
                 <h1>Hi, I'm Bev.</h1>
                 <p>and I'm a WordPress Developer / Android Developer / UI Designer</p>
                 <a href="#contact" style="text-decoration: none; color: white;">
-                    <button>Hire me</button>
+                    <button>Get in touch</button>
                 </a>
             </div>
         </div>
@@ -165,6 +167,7 @@
                     <h1>Some of my Works & Projects</h1>
                 </div>
             </div>
+            
             <div class="skillsSection__list">
                 <div class="grid__container">
                     <div class="grid__card">
@@ -272,7 +275,7 @@
        <section id="contact">
             <div class="skillsSection__list">
                 <div class="empty__grid" style=" height: auto; padding: auto; margin: auto; text-align: center; justify-content: center;
-                justify-content: center;">
+                justify-content: center; align-self: center;">
                         <img src="/images/Typing-amico.png" alt="" style="width: 400px; height: auto;">
                 </div>
                 <div class="grid__form">
@@ -391,6 +394,28 @@
         </footer> 
 
         <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+        <!-- <script>
             // When the user scrolls down 20px from the top of the document, slide down the navbar
             window.onscroll = function() {scrollFunction()};
             
@@ -401,7 +426,7 @@
                 document.getElementById("navbar").style.top = "-50px";
               }
             }
-            </script>
+            </script> -->
 
     </body>
 </html>

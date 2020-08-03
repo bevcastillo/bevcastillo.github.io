@@ -4,7 +4,18 @@
     list-style: none;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
 }
+/* 
+body {
+    font-family: 'Lora', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+   } */
 
 .logo {
     font-family: 'Pacifico', cursive;
@@ -26,7 +37,6 @@ nav {
     font-weight: bold;
     transition: top 0.3s;
     display: block;
-    font-family: 'Roboto Slab', serif;
 
 }
 
@@ -77,21 +87,61 @@ nav a.active, nav a:hover {
     display: none;
 }
 
-.parallax {
-    background: url('../images/top-snow-bg.png') no-repeat center fixed;
-    height: 800px;
+
+.hero {
+    background-color: #EAE7DC;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-}
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-text h1{
+    color: #E85A4F;
+    font-family: 'Sacramento', cursive;
+    font-size: 5em !important;
+  }
+  
+  .hero-text button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    background-color: #E85A4F;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 22px;
+    font-size: 18px;
+  }
+  
+  .hero-text button:hover {
+    background-color: #e98074;
+    color: white;
+  }
+
 
 .mainVisualHeading__text {
     text-align: center;
-    font-size: 62px;
+    font-size: 6em;
+    color: #E85A4F;
 }
 
 /* .mainVisualSection h1{
     font-size: 80px;
     color: #303030;
 } */
+
 
 .mainVisualSection {
     display: flex;
@@ -114,7 +164,7 @@ nav a.active, nav a:hover {
 
 .aboutSection {
     display: grid;
-    padding: 60px 100px;
+    padding: 60px 200px;
     margin: auto;
     align-items:center;
     justify-content:center;
@@ -127,11 +177,11 @@ nav a.active, nav a:hover {
     text-align: center;
 }
 
-.section__heading h1{
+/* .section__heading h1{
     font-size: 26px;
     color: #303030;
     font-family: 'Roboto Slab', serif;
-}
+} */
 
 
 .aboutSection__image {
@@ -144,17 +194,17 @@ nav a.active, nav a:hover {
 
 .aboutSection__content {
     text-align: center;
-    padding: 50px 100px;    
+    padding: 50px 0px;    
     margin: auto;
     font-size: 18px;
 }
 
-.aboutSection__content p{
+/* .aboutSection__content p{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: #330033;
     font-weight: lighter;
-}
+} */
 
 .aboutSection__content a {
     text-decoration: none;
@@ -179,7 +229,8 @@ nav a.active, nav a:hover {
 
 #services {
     padding: 60px 200px;
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
+    background-color: #EAE7DC;
 }
 
 .grid__image {
@@ -187,7 +238,7 @@ nav a.active, nav a:hover {
     text-align: center;
 }
 
-.grid__text {
+/* .grid__text {
     grid-row: 2 / 2;
     display: flex;
     width: 100%;
@@ -197,7 +248,7 @@ nav a.active, nav a:hover {
     align-items:center;
     justify-content:center;
     font-family: 'Roboto', sans-serif;
-}
+} */
 
 .grid__text p {
     font-size: 18px;
@@ -221,12 +272,12 @@ nav a.active, nav a:hover {
 }
 
 .grid__image {
-    width: 40%;
+    width: 50%;
 }
 
 .grid__text {
     height: 200px;
-    width: 60%;
+    width: 50%;
     padding: 10px;
     font-weight: lighter;
 }
@@ -253,14 +304,13 @@ nav a.active, nav a:hover {
     padding: 30px 40px 10px 40px;
     margin: 10px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 
 }
 
 
 .grid__card h4 {
     padding-bottom: 20px;
-    /* font-family: 'Roboto', sans-serif; */
     font-weight: bolder;
     color: black;
 }
@@ -310,13 +360,13 @@ nav a.active, nav a:hover {
     text-align: left;
 }
 
-.grid__form h2{
+/* .grid__form h2{
     font-family: 'Roboto Slab', serif;
     color: #303030;
-}
+} */
 
 .grid__form p{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     color: #303030;
     padding-top: 12px;
     font-size: 22px;
@@ -325,7 +375,7 @@ nav a.active, nav a:hover {
 
 #contact {
     padding: 60px 100px;
-    background-color: #F8F8F8;
+    background-color: #EAE7DC;
 }
 
 .contact-form {
@@ -338,10 +388,8 @@ nav a.active, nav a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
-    
-
   }
 
   .contact-form input[type=email] {
@@ -351,7 +399,7 @@ nav a.active, nav a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
 
   }
@@ -364,26 +412,26 @@ nav a.active, nav a:hover {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
 
   }
 
-  .contact-form button {
-    width: 20%;
-    background-color: #648D93;
+
+  .contact-form button{
+    width: auto;
+    background-color: #E85A4F;
     color: white;
-    padding: 14px 20px;
+    padding: 15px 40px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
   }
 
   .contact-form button:hover{
-    background-color: #4f6d75;
+    background-color: #e98074;
   }
 
   #contact-details {
@@ -411,14 +459,14 @@ nav a.active, nav a:hover {
     font-size: 16px;
     text-decoration: none;
     color: #303030;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
   }
 
   .grid__social a:hover {
     font-size: 16px;
     text-decoration: underline;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
     
   }
@@ -440,7 +488,7 @@ footer ul {
 footer ul li {
     display: inline-block;
     margin: 0 5px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 14px;
 }
 
@@ -465,7 +513,7 @@ a.active, a:hover {
 
 .footer_credits p{
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
 }
 
@@ -483,15 +531,24 @@ a.active, a:hover {
 
   .skillsSection__list .footer_grid p {
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
   }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    nav {
+        margin: 0px;
+        padding: 0px 40px;
+    }
+
     .checkbtn {
         display: block;
+        padding: 0px;
+        margin: 0px;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -522,6 +579,59 @@ a.active, a:hover {
     #check:checked ~ ul {
         left: 0;
     }
+
+
+    .hero {
+        background-color: #EAE7DC;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: auto;
+        margin: auto;
+      }
+    
+      .hero-text {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        position: absolute;
+        /* top: 50%;
+        left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        background-color: #4f6d75;
+      }
+    
+      .hero-text h1{
+        color: #E85A4F;
+        font-family: 'Sacramento', cursive;
+        font-size: 3em !important;
+      }
+
+      .hero-text p{
+        color: #303030;
+        font-size: 1em !important;
+      }
+      
+      .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 15px 40px;
+        color: white;
+        background-color: #E85A4F;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2px;
+        margin-top: 22px;
+        font-size: 18px;
+      }
+      
+      .hero-text button:hover {
+        background-color: #e98074;
+        color: white;
+      }
 
     #home .mainVisualSection h2{
         font-size: 32px;
@@ -590,7 +700,7 @@ a.active, a:hover {
     
     .grid__text span {
         font-size: 16px;
-        font-weight: bolder;
+        font-weight: bold;
     }
 
     .grid__container {
@@ -616,7 +726,7 @@ a.active, a:hover {
     
     .aboutSection__content p{
         font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         color: #330033;
         font-weight: lighter;
         margin: 0px;
@@ -625,7 +735,7 @@ a.active, a:hover {
 
     #services {
         padding: 50px 20px;
-        background-color: #F8F8F8;
+        background-color: #EAE7DC;
     }
 
     #my-works {
@@ -634,7 +744,7 @@ a.active, a:hover {
 
     #contact {
         padding: 50px 20px;
-        background-color: #F8F8F8;
+        background-color: #EAE7DC;
     }
 
     .contact-form input[type=text] {
@@ -644,7 +754,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -656,7 +766,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -669,7 +779,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -683,7 +793,7 @@ a.active, a:hover {
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
       }
 
@@ -720,6 +830,7 @@ a.active, a:hover {
     .checkbtn {
         display: block;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -729,16 +840,17 @@ a.active, a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        
     }
 
     nav ul li {
         display: block;
-        margin: 50px 0;
+        margin: 0px 0;
         line-height: 30px;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     a:hover, a.active {
@@ -844,7 +956,7 @@ a.active, a:hover {
     
     .aboutSection__content p{
         font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         color: #330033;
         font-weight: lighter;
         margin: 0px;
@@ -853,7 +965,7 @@ a.active, a:hover {
 
     #services {
         padding: 50px;
-        background-color: #F8F8F8;
+        background-color: #EAE7DC;
     }
 
     #my-works {
@@ -862,7 +974,7 @@ a.active, a:hover {
 
     #contact {
         padding: 50px;
-        background-color: #F8F8F8;
+        background-color: #EAE7DC;
     }
 
     .contact-form input[type=text] {
@@ -872,7 +984,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -884,7 +996,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -897,7 +1009,7 @@ a.active, a:hover {
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
     
       }
@@ -911,7 +1023,7 @@ a.active, a:hover {
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
         font-size: 16px;
       }
 

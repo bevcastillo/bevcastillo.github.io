@@ -164,7 +164,7 @@ nav a.active, nav a:hover {
 
 .aboutSection {
     display: grid;
-    padding: 60px 200px;
+    padding: 80px 200px;
     margin: auto;
     align-items:center;
     justify-content:center;
@@ -228,7 +228,7 @@ nav a.active, nav a:hover {
 
 
 #services {
-    padding: 60px 200px;
+    padding: 80px 200px;
     /* background-color: #F8F8F8; */
     background-color: #EAE7DC;
 }
@@ -283,7 +283,7 @@ nav a.active, nav a:hover {
 }
 
 #my-works {
-    padding: 60px 100px;
+    padding: 80px 100px;
 }
 
 .grid__container {
@@ -369,12 +369,12 @@ nav a.active, nav a:hover {
     /* font-family: 'Roboto', sans-serif; */
     color: #303030;
     padding-top: 12px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: lighter;
 }
 
 #contact {
-    padding: 60px 100px;
+    padding: 80px 100px;
     background-color: #EAE7DC;
 }
 
@@ -389,7 +389,7 @@ nav a.active, nav a:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     /* font-family: 'Roboto', sans-serif; */
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .contact-form input[type=email] {
@@ -400,7 +400,7 @@ nav a.active, nav a:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     /* font-family: 'Roboto', sans-serif; */
-    font-size: 18px;
+    font-size: 16px;
 
   }
 
@@ -413,7 +413,7 @@ nav a.active, nav a:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     /* font-family: 'Roboto', sans-serif; */
-    font-size: 18px;
+    font-size: 16px;
 
   }
 
@@ -436,7 +436,7 @@ nav a.active, nav a:hover {
 
   #contact-details {
       text-align: center;
-      padding: 60px 100px;
+      padding: 80px 100px;
   }
 
   .grid_social__container {

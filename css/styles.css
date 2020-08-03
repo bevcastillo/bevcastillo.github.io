@@ -448,8 +448,9 @@ nav a.active, nav a:hover {
 
   .grid__social {
     /* background-color: #90CAF9; */
-    background-color: #c0e1fc;
+    background-color: #EAE7DC;
     border-style: dashed;
+    border-radius: 2px;
     padding: 20px 40px;
     margin: 0px;
     text-align: center;

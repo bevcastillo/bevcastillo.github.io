@@ -52,7 +52,7 @@ body {
 }
 
 
-nav {
+/* nav {
     background: none;
     height: 80px;
     font-size: 35px;
@@ -62,9 +62,27 @@ nav {
     transition: top 0.3s;
     display: block;
 
+} */
+
+.footer_credits ul {
+    float: center;
+    text-align: center;
+    visibility: visible;
 }
 
-nav img {
+.footer_credits ul a{
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 5px;
+    padding: 7px 10px;
+}
+
+.footer_credits ul a:hover{
+    color: white;
+}
+
+
+/* nav img {
     width: 60px; 
     height: 60px;
     margin: 10px;
@@ -95,7 +113,7 @@ nav a.active, nav a:hover {
     text-decoration: underline;
     transition: .5s;
     color: #4f6d75;
-}
+} */
 
 .checkbtn {
     font-size: 30px;
@@ -511,27 +529,6 @@ nav a.active, nav a:hover {
       text-align: center;
   }
 
-
-
-footer ul {
-    float: center;
-    text-align: right;
-}
-
-footer ul li {
-    display: inline-block;
-    margin: 0 5px;
-    /* font-family: 'Roboto', sans-serif; */
-    font-size: 14px;
-}
-
-footer ul li a {
-    color: rgba(255, 255, 255, 0.5);
-    padding: 7px 13px;
-    text-transform: none;
-    text-decoration: none;
-}
-
 a.active, a:hover {
     text-decoration: underline;
     transition: .5s;
@@ -546,12 +543,10 @@ a.active, a:hover {
 
 .footer_credits p{
     color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
 }
 
 .footer_credits p a{
     color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -580,10 +575,28 @@ a.active, a:hover {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-    nav {
+    /* .footer_credits ul {
+        float: center;
+        text-align: center;
+    } */
+    
+    .footer_credits ul a{
+        list-style-type : none;
+        color: rgba(255, 255, 255, 0.5);
+        display: inline;
+        margin: 0 5px;
+        padding: 7px 13px;
+    }
+    
+    .footer_credits ul a:hover{
+        color: white;
+    }
+
+    
+    /* nav {
         margin: 0px;
         padding: 0px 40px;
-    }
+    } */
 
     .checkbtn {
         display: block;
@@ -602,7 +615,7 @@ a.active, a:hover {
         transition: all .5s;
     }
 
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
@@ -610,7 +623,7 @@ a.active, a:hover {
 
     nav ul li a {
         font-size: 20px;
-    }
+    } */
 
     a:hover, a.active {
         background: none;
@@ -898,10 +911,10 @@ a.active, a:hover {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    nav {
+    /* nav {
         margin: 0px;
         padding: 0px 40px;
-    }
+    } */
 
     .checkbtn {
         display: block;
@@ -919,7 +932,7 @@ a.active, a:hover {
         text-align: center;
         transition: all .5s;
     }
-
+/* 
     nav ul li {
         display: block;
         margin: 50px 0;
@@ -928,7 +941,7 @@ a.active, a:hover {
 
     nav ul li a {
         font-size: 20px;
-    }
+    } */
 
     a:hover, a.active {
         background: none;
@@ -1215,10 +1228,10 @@ a.active, a:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    nav {
+    /* nav {
         margin: 0px;
         padding: 0px 40px;
-    }
+    } */
 
     .checkbtn {
         display: block;
@@ -1237,7 +1250,7 @@ a.active, a:hover {
         transition: all .5s;
     }
 
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
@@ -1245,7 +1258,7 @@ a.active, a:hover {
 
     nav ul li a {
         font-size: 20px;
-    }
+    } */
 
     a:hover, a.active {
         background: none;
@@ -1528,10 +1541,10 @@ a.active, a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    nav {
+    /* nav {
         margin: 0px;
         padding: 0px 40px;
-    }
+    } */
 
     .checkbtn {
         display: block;
@@ -1550,7 +1563,7 @@ a.active, a:hover {
         transition: all .5s;
     }
 
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
@@ -1558,7 +1571,7 @@ a.active, a:hover {
 
     nav ul li a {
         font-size: 20px;
-    }
+    } */
 
     a:hover, a.active {
         background: none;

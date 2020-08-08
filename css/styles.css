@@ -195,14 +195,23 @@ body a:hover {
     margin: auto;
 }
 
-.aboutSection__content {
+/* .aboutSection__content {
     text-align: center;
     padding: 50px 0px;    
     margin: auto;
     font-size: 16px;
+} */
+
+.aboutSection__content {
+    text-align: center; 
+    line-height: 2; 
+    background-color: #f2f0ea; 
+    padding: 20px 40px;
+    margin-top: 22px;
+    border-radius: 2px;
 }
 
-.aboutSection__content a {
+/* .aboutSection__content a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
@@ -211,7 +220,7 @@ body a:hover {
 .aboutSection__content a:hover {
     text-decoration: underline;
     color: black;
-}
+} */
 
 .section__header {
     display: grid;
@@ -258,6 +267,7 @@ body a:hover {
     width: 50%;
 }
 
+
 .grid__text {
     height: 200px;
     width: 50%;
@@ -284,11 +294,11 @@ body a:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 6px;
     background-color: white;
-    padding: 30px 30px 10px 30px;
+    padding: 30px 30px 20px 30px;
     margin: 10px;
     text-align: center;
     justify-content: center;
-    min-height: 350px;
+    min-height: 250px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -302,9 +312,10 @@ body a:hover {
 }
 
 .grid__card p{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: left;
     font-weight: lighter;
+    width: 100%;
 }
 
 .grid__card a{
@@ -328,6 +339,7 @@ body a:hover {
     text-align: left;
     cursor: pointer;
     font-size: 12px;
+    background-color: #E85A4F;
 }
 
 .empty__grid {
@@ -628,14 +640,17 @@ a.active, a:hover {
     }
 
     .aboutSection__content {
-        text-align: left;
-        margin: 0px;
-        padding: 0px;
+        text-align: left; 
+        line-height: 2; 
+        background-color: #f2f0ea; 
+        padding: 20px 40px;
+        margin-top: 22px;
+        border-radius: 2px;
     }
     
-    .aboutSection__content p{
-        padding-top: 32px;
-    }
+    /* .aboutSection__content p{
+        padding-top: 22px;
+    } */
 
     #services {
         padding: 50px 30px;
@@ -821,13 +836,12 @@ a.active, a:hover {
     }
 
     .aboutSection__content {
-        text-align: left;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    .aboutSection__content p{
-        padding-top: 32px;
+        text-align: left; 
+        line-height: 2; 
+        background-color: #f2f0ea; 
+        padding: 20px 40px;
+        margin-top: 22px;
+        border-radius: 2px;
     }
 
     #services {

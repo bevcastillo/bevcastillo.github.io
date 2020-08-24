@@ -386,7 +386,8 @@ body a:hover {
 
 #contact {
     padding: 80px 180px;
-    background-color: #EAE7DC;
+    background-color: white;
+    /* background-color: #EAE7DC; */
 }
 
 .contact-form {
@@ -637,6 +638,7 @@ a.active, a:hover {
         margin: auto;
         align-items:center;
         justify-content:center;
+        background-color: white;
     }
 
     .aboutSection__content {
@@ -961,6 +963,7 @@ a.active, a:hover {
 
     #about {
         padding: 50px;
+        background-color: white;
     }
 
     #services {

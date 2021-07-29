@@ -1,34 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
 *{
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: 'Karla', sans-serif;
+    /* overflow-x: hidden; */
+    font-family: 'Manrope', sans-serif;
     font-weight: lighter;
     font-size: 16px;
     scroll-behavior: smooth;
 }
+
 
 body {
     color: #5d5c58;
     background-color: #F8F8F8;
 }
 
-body h1{
-    font-family: 'DM Serif Display', serif;
+/*
+ For Privacy Policy -- start
+*/
+
+.privacy {
+   padding: 3% 20%;
+}
+
+/* Privacy Policy -- end */
+
+strong {
+    font-weight: bold;
     color: black;
-    font-size: 2em;
+}
+
+body h1{
+    color: black;
+    font-size: 32px;
+    line-height: 2.5em;
+    font-weight: 800;
+}
+
+body h2 {
+    color: black;
+    font-size: 28px;
+    line-height: 2em;
+    font-weight: 800;
 }
 
 body h3{
-    font-family: 'DM Serif Display', serif;
     color: black;
+    font-size: 22px;
+    line-height: 2em;
+    font-weight: 800;
 }
 
 body h4{
-    font-family: 'DM Serif Display', serif;
     color: black;
+    font-weight: 800;
 }
 
 body a {
@@ -37,6 +65,30 @@ body a {
 
 body a:hover {
     color: black;
+}
+
+body p {
+    line-height: 2em;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+body ul {
+    list-style-position: inside;
+    list-style: none;
+    margin-left: 1em;
+}
+
+li::marker {
+    color: black !important;
+  }
+
+body li {
+    font-size: 16px;
+    margin-left: 10px;
+    list-style-type: disc;
+    line-height: 2em;
+
 }
 
 
